@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="frmdisciplina.aspx" />
     <Content Include="frmprofessores.aspx" />
     <Content Include="frmusuarios.aspx" />
     <Content Include="Web.config" />
@@ -79,6 +80,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmdisciplina.aspx.cs">
+      <DependentUpon>frmdisciplina.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmdisciplina.aspx.designer.cs">
+      <DependentUpon>frmdisciplina.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmprofessores.aspx.cs">
       <DependentUpon>frmprofessores.aspx</DependentUpon>
