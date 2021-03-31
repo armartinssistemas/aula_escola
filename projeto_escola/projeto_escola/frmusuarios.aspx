@@ -19,7 +19,7 @@
             <asp:TextBox ID="txtSenha" runat="server"></asp:TextBox>
             <br />
             <asp:Button ID="btnEntrar" runat="server" Text="Entrar" OnClick="btnEntrar_Click" />
-        </div>
+        &nbsp;</div>
     </form>
 </body>
 </html>
