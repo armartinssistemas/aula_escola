@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\Prof. Ronaldo\Source\Repos\armartinssistemas\aula_escola1\projeto_escola\projeto_escola\ModelEscola.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Prof. Ronaldo\Source\Repos\armartinssistemas\aula_escola_teste2\projeto_escola\projeto_escola\ModelEscola.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

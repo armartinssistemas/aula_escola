@@ -81,8 +81,8 @@
     <Content Include="frmusuarios.aspx" />
     <Content Include="ModelEscola.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ModelEscola.Context.cs</LastGenOutput>
       <DependentUpon>ModelEscola.edmx</DependentUpon>
+      <LastGenOutput>ModelEscola.Context.cs</LastGenOutput>
     </Content>
     <Content Include="ModelEscola.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

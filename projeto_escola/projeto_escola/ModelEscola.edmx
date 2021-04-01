@@ -136,7 +136,7 @@
           <Property Name="login" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="senha" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="escolaEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="escolaEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="alunos" EntityType="Self.alunos" />
           <EntitySet Name="cursoextra" EntityType="Self.cursoextra" />
           <EntitySet Name="cursos" EntityType="Self.cursos" />
@@ -149,7 +149,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="escolaModelStoreContainer" CdmEntityContainer="escolaEntities">
+        <EntityContainerMapping StorageEntityContainer="escolaModelStoreContainer" CdmEntityContainer="escolaEntities1">
           <EntitySetMapping Name="alunos">
             <EntityTypeMapping TypeName="escolaModel.alunos">
               <MappingFragment StoreEntitySet="alunos">

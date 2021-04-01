@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="escolaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="alunos">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nome" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="cpf" Type="char" MaxLength="14" Nullable="false" />
+    <Property Name="rua" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="numero" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="bairro" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="cep" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="cidade" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cursoextra">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nome" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="descricao" Type="text" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cursos">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nome" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="descricao" Type="text" Nullable="false" />
+  </EntityType>
+  <EntityType Name="disciplina">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nome" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="descricai" Type="text" Nullable="false" />
+  </EntityType>
+  <EntityType Name="professores">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nome" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="cpf" Type="char" MaxLength="14" Nullable="false" />
+    <Property Name="rua" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="numero" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="cep" Type="char" MaxLength="9" Nullable="false" />
+    <Property Name="bairro" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="cidade" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="usuarios">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nome" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="login" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="senha" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="escolaModelStoreContainer">
+    <EntitySet Name="alunos" EntityType="Self.alunos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="cursoextra" EntityType="Self.cursoextra" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="cursos" EntityType="Self.cursos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="disciplina" EntityType="Self.disciplina" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="professores" EntityType="Self.professores" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="usuarios" EntityType="Self.usuarios" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

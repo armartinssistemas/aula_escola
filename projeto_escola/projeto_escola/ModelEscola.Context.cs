@@ -13,10 +13,10 @@ namespace projeto_escola
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class escolaEntities : DbContext
+    public partial class escolaEntities1 : DbContext
     {
-        public escolaEntities()
-            : base("name=escolaEntities")
+        public escolaEntities1()
+            : base("name=escolaEntities1")
         {
         }
     
